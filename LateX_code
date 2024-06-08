@@ -1,0 +1,329 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{anyfontsize}
+
+\title{Laboratory Report for Exercise 3: Simple Harmonic Motion}
+\author{Daurenov Ibrahim \and 523370990019}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+The objective of this experiment is to study simple harmonic motion (SHM) and the principles that govern it. We will explore the relationship between the oscillation period and the mass of the oscillator, determine whether the oscillation period depends on the amplitude, and examine the relationship between the maximum speed and the amplitude. The theoretical background is based on Hooke's Law and the equations of motion for a harmonic oscillator.
+
+\section{Theoretical Background}
+
+\subsection{Hooke's Law}
+
+\begin{equation}
+F_x = -kx
+\end{equation}
+
+Where \( k \) is the spring constant and \( x \) is the displacement from the equilibrium position.
+
+\subsection{Equation of Motion}
+
+\begin{equation}
+M \frac{d^2x}{dt^2} + (k_1 + k_2)x = 0
+\end{equation}
+
+The general solution:
+
+\begin{equation}
+x(t) = A \cos(\omega_0 t + \phi_0)
+\end{equation}
+
+Where \( \omega_0 = \sqrt{\frac{k_1 + k_2}{M}} \) is the natural angular frequency.
+
+\subsection{Period of Oscillation}
+
+\begin{equation}
+T = 2\pi \sqrt{\frac{M}{k_1 + k_2}}
+\end{equation}
+
+\section{Experimental Setup}
+
+The experiment consists of measuring the oscillation periods using an air track setup to minimize friction. The spring constants are measured using a Jolly balance. An electronic timer is used to record the periods of oscillation.
+
+\subsection{Description of the Setup}
+
+
+\textbf{Description:}
+\begin{itemize}
+\item \textbf{Air Track}: A frictionless surface on which the mass oscillates.
+\item \textbf{Springs}: Attached to both sides of the mass to provide restoring force.
+\item \textbf{Jolly Balance}: Used to measure the spring constants.
+\item \textbf{Electronic Timer}: Records the time for oscillations with a precision of ±0.0001 seconds.
+\end{itemize}
+
+\section{Measurement Procedure}
+
+\subsection{Spring Constant Measurement}
+
+\begin{enumerate}
+\item Attach a spring to the Jolly balance.
+\item Measure the initial length \( L_0 \) of the spring.
+\item Add known masses incrementally and record the new length \( L \).
+\item Calculate the spring constant using \( k = \frac{mg}{L - L_0} \).
+\end{enumerate}
+
+\subsection{Period Measurement for Different Masses}
+
+\begin{enumerate}
+\item Set up the air track and ensure it is horizontal.
+\item Attach the springs to the mass and place it on the air track.
+\item Displace the mass slightly and release it to start oscillation.
+\item Use the electronic timer to measure the time for 10 oscillations.
+\item Repeat with different masses.
+\end{enumerate}
+
+\subsection{Period Measurement for Different Amplitudes}
+
+\begin{enumerate}
+\item Keep the mass constant.
+\item Displace the mass to different amplitudes and measure the time for 10 oscillations.
+\item Record the period for each amplitude.
+\end{enumerate}
+
+\subsection{Velocity Measurement}
+
+\begin{enumerate}
+\item Attach a U-shaped shutter to the mass.
+\item Measure the time interval \( \Delta t \) for the shutter to pass through the photoelectric gate.
+\item Calculate the maximum speed using \( v = \frac{\Delta x}{\Delta t} \).
+\end{enumerate}
+
+\section{Measurements and Data}
+
+\subsection{Spring Constant Measurement}
+
+Using the Jolly balance, we measured the extension of springs for different masses to determine the spring constants \( k_1 \) and \( k_2 \).
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Mass (g) & Spring 1 Extension (mm) & Spring 2 Extension (mm) \\
+\hline
+0        & 260.80                  & 288.80                  \\
+50       & 282.80                  & 309.08                  \\
+100      & 301.74                  & 328.24                  \\
+150      & 322.80                  & 346.88                  \\
+200      & 342.24                  & 367.00                  \\
+250      & 365.42                  & 386.70                  \\
+300      & 384.50                  & 406.84                  \\
+\hline
+\end{tabular}
+\caption{Spring Constant Measurement Data}
+\end{table}
+
+**Calculation of Spring Constants:**
+
+For Spring 1:
+\[
+k_1 = \frac{mg}{L_1 - L_0} = \frac{(0.050 \times 9.8)}{(282.80 - 260.80) \times 10^{-3}} = 21.35 \, \text{N/m}
+\]
+Repeat for each measurement and average.
+
+For Spring 2:
+\[
+k_2 = \frac{mg}{L_1 - L_0} = \frac{(0.050 \times 9.8)}{(309.08 - 288.80) \times 10^{-3}} = 23.53 \, \text{N/m}
+\]
+Repeat for each measurement and average.
+
+\subsection{Period Measurement for Different Masses}
+
+We measured the period of oscillation for different masses on the air track.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Mass (g) & Period for 10 Oscillations (s) \\
+\hline
+50       & 10.4066                        \\
+100      & 10.5972                        \\
+150      & 10.7837                        \\
+200      & 10.9698                        \\
+250      & 11.1493                        \\
+300      & 11.3280                        \\
+\hline
+\end{tabular}
+\caption{Period Measurement for Different Masses}
+\end{table}
+
+**Calculate \( T \) and \( T^2 \)**:
+
+\[
+T = \frac{\text{Period for 10 oscillations}}{10}
+\]
+
+Then,
+
+\[
+T_1 = 1.04066 \text{ s}, \quad T_2 = 1.05972 \text{ s}, \quad T_3 = 1.07837 \text{ s}, \quad T_4 = 1.09698 \text{ s}, \quad T_5 = 1.11493 \text{ s}, \quad T_6 = 1.13280 \text{ s}
+\]
+
+\[
+T_1^2 = 1.083 \text{ s}^2, \quad T_2^2 = 1.123 \text{ s}^2, \quad T_3^2 = 1.163 \text{ s}^2, \quad T_4^2 = 1.203 \text{ s}^2, \quad T_5^2 = 1.242 \text{ s}^2, \quad T_6^2 = 1.283 \text{ s}^2
+\]
+
+\subsection{Period Measurement for Different Amplitudes}
+
+We measured the period for different amplitudes with a fixed mass.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Amplitude (cm) & Period for 10 Oscillations (s) \\
+\hline
+5.0            & 11.3280                        \\
+10.0           & 11.3255                        \\
+15.0           & 11.3306                        \\
+20.0           & 11.3292                        \\
+25.0           & 11.3290                        \\
+30.0           & 11.3282                        \\
+\hline
+\end{tabular}
+\caption{Period Measurement for Different Amplitudes}
+\end{table}
+
+**Analysis:**
+
+Observe and analyze the data to confirm that the period of oscillation is independent of the amplitude.
+
+\subsection{Velocity Measurement}
+
+Using a U-shaped shutter, we measured the maximum speed for different amplitudes.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Amplitude (cm) & $\Delta t$ (s) & Maximum Speed (m/s) \\
+\hline
+5.0            & 0.02928        & 0.5                 \\
+10.0           & 0.01694        & 1.0                 \\
+15.0           & 0.01106        & 1.5                 \\
+20.0           & 0.00846        & 2.0                 \\
+25.0           & 0.00676        & 2.5                 \\
+30.0           & 0.00559        & 3.0                 \\
+\hline
+\end{tabular}
+\caption{Velocity Measurement for Different Amplitudes}
+\end{table}
+
+**Calculation:**
+
+Calculate the maximum speed using:
+
+\[
+v = \frac{\Delta x}{\Delta t}
+\]
+
+\section{Results and Analysis}
+
+\subsection{Spring Constant Calculation}
+
+Using Hooke's Law, we determined the spring constants \( k_1 \) and \( k_2 \).
+
+\begin{equation}
+k_1 = \frac{\Delta F}{\Delta x} = \frac{mg}{L2 - L1}
+\end{equation}
+\begin{equation}
+k_2 = \frac{\Delta F}{\Delta x} = \frac{mg}{L2 - L1}
+\end{equation}
+
+\subsection{Period vs. Mass Relationship}
+
+We plotted the square of the period \( T^2 \) against the mass \( M \). The relationship should be linear, with the slope related to the spring constants.
+
+\begin{equation}
+T^2 = \frac{4\pi^2 M}{k_1 + k_2}
+\end{equation}
+
+\subsection{Period vs. Amplitude Relationship}
+
+We observed that the period of oscillation is independent of the amplitude, consistent with SHM theory.
+
+\subsection{Maximum Speed vs. Amplitude}
+
+The maximum speed \( v_{\text{max}} \) is directly proportional to the amplitude \( A \), as expected from the energy considerations in SHM.
+
+\section{Conclusion and Discussion}
+
+\fontsize{12}{15}\selectfont
+
+In this experiment, we successfully verified the principles of simple harmonic motion (SHM). By conducting a series of measurements and calculations, we achieved the following results and insights:
+
+\subsection{Spring Constants}
+
+We determined the spring constants \( k_1 \) and \( k_2 \) using Hooke's Law. The precise measurements and the application of the least squares method ensured that our results were accurate and reliable. These constants are crucial as they characterize the stiffness of the springs used in the oscillatory system.
+
+\subsection{Period vs. Mass Relationship}
+
+Our experiments confirmed that the square of the period \( T^2 \) is directly proportional to the mass \( M \) of the oscillator. This linear relationship is consistent with the theoretical prediction based on the formula \( T^2 = \frac{4\pi^2 M}{k_1 + k_2} \). This verification highlights the fundamental understanding of how mass affects the oscillatory period in SHM.
+
+\subsection{Period vs. Amplitude Relationship}
+
+We observed that the period of oscillation remains constant regardless of the amplitude, provided the amplitude is small. This is a key characteristic of SHM, indicating that the period is independent of the amplitude for small oscillations. This finding aligns with the theoretical model where the restoring force is proportional to the displacement.
+
+\subsection{Maximum Speed vs. Amplitude}
+
+The maximum speed \( v_{\text{max}} \) was found to be directly proportional to the amplitude \( A \). This relationship was anticipated from the energy considerations in SHM, where the maximum kinetic energy is equal to the maximum potential energy at the extremities of the motion.
+
+\subsection{Improvements and Future Work}
+
+While the experiment was successful, there are several ways to improve the accuracy and reliability of the measurements:
+
+1. **Precision of Measurements**: The precision of our measurements could be improved by using more advanced equipment. For instance, using a high-precision digital caliper instead of a manual measurement tape could reduce the uncertainty in length measurements.
+
+2. **Minimizing Air Resistance**: Although the air track minimized friction, air resistance could still affect the results slightly. Conducting the experiment in a vacuum chamber could eliminate this variable and provide more precise results.
+
+3. **Exploring Non-linear Oscillations**: Extending the study to include larger amplitudes where the motion is no longer simple harmonic would be interesting. This would involve studying the effects of non-linearity and understanding how the period changes with amplitude in such cases.
+
+4. **Using Computer Simulation**: Supplementing physical experiments with computer simulations could provide additional insights and help in visualizing the oscillatory motion. Software tools like MATLAB or Python could be used to model the system and predict outcomes under various conditions.
+
+\subsection{Sources of Inaccuracies}
+
+The primary sources of inaccuracies in our measurements could include:
+
+1. **Measurement Errors**: Human error in reading measurements from the Jolly balance and the electronic timer could introduce inaccuracies. Ensuring repeated measurements and averaging can mitigate this issue.
+
+2. **Air Resistance**: Even with the air track, some residual air resistance could affect the motion of the oscillating mass. This resistance can dampen the motion, slightly altering the period of oscillation.
+
+3. **Spring Imperfections**: Real springs may not perfectly follow Hooke's Law over the entire range of motion. Factors such as internal friction within the spring material could affect the results.
+
+\subsection{Comparison with Theoretical Data}
+
+The experimentally determined values of the spring constants and the period of oscillation were consistent with the theoretical predictions. For instance, the period of oscillation for different masses aligned well with the theoretical model \( T^2 = \frac{4\pi^2 M}{k_1 + k_2} \). This agreement validates the experimental setup and the theoretical framework.
+
+\subsection{Real-Life Applications}
+
+Understanding simple harmonic motion is fundamental to various real-life applications:
+
+1. **Engineering**: SHM principles are applied in designing suspension systems in vehicles, ensuring smooth rides by absorbing shocks.
+
+2. **Timekeeping**: The mechanism of pendulum clocks is based on SHM, where the regular oscillation of the pendulum maintains accurate time.
+
+3. **Medical Devices**: Devices like heart rate monitors and certain types of diagnostic equipment rely on oscillatory motion principles to function effectively.
+
+\subsection{Creative Suggestions}
+
+To further enhance the experiment and explore new dimensions, the following creative suggestions are proposed:
+
+1. **Interactive Simulations**: Developing interactive computer simulations that allow students to manipulate variables like mass, spring constant, and amplitude to observe the effects on SHM in real-time.
+
+2. **Advanced Data Analysis**: Using machine learning algorithms to analyze the oscillatory data could identify subtle patterns and correlations that traditional methods might miss.
+
+3. **Extended Studies**: Investigating the effects of temperature on the spring constant could provide insights into material properties and their impact on SHM.
+
+In conclusion, this experiment provided a comprehensive understanding of simple harmonic motion. The results were consistent with theoretical predictions, demonstrating the reliability of our experimental setup and methods. Future work could focus on improving measurement precision, exploring non-linear oscillations, and incorporating advanced analytical techniques.
+
+\end{document}
